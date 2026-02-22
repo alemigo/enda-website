@@ -591,18 +591,9 @@
     </p>
 
     <p><em>Updated: December 2025</em></p>
+    <div class="top-nav">
+      <a class="back-button" href="https://www.endatech.app">Back to Main Page</a>
+    </div>
   </main>
-  <script>
-    (function () {
-      try {
-        history.pushState({ legalBackRedirect: true }, "", window.location.href);
-        window.addEventListener("popstate", function () {
-          window.location.replace("https://www.endatech.app");
-        });
-      } catch (_) {
-        // If history APIs are unavailable, do nothing.
-      }
-    })();
-  </script>
 </body>
 </html>
