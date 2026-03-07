@@ -53,12 +53,12 @@ export default function Landing() {
     {
       icon: Sparkles,
       title: "Unified agreement work flow with AI-powered features",
-      description: "End to end platform speeds up contract creation, enhance negotiations with intuitive comparisons, legal insights, and smart analytics across your private repository"
+      description: "End-to-end platform speeds up contract creation, enhances negotiations with intuitive comparisons, legal insights, and smart analytics across your private repository"
     },
     {
       icon: Shield,
       title: "Proven Transaction-Based Professional NDAs and Agreements",
-      description: "Backed by 20 years and over $5b of transactions; leveraging databases with thousands of precedents"
+      description: "Backed by over 20 years and $5b+ of real world transactions; leveraging databases with thousands of precedents"
     },
     {
       icon: Zap,
@@ -68,7 +68,7 @@ export default function Landing() {
     {
       icon: Users,
       title: "For Business Users and Lawyers",
-      description: "Intuitive, real-time collaborative platform, scale effortlessly with your needs"
+      description: "Intuitive, real-time collaborative platform, scaling effortlessly with your needs"
     },
     {
       icon: Lock,
@@ -78,7 +78,7 @@ export default function Landing() {
     {
       icon: TrendingUp,
       title: "How It Should Be",
-      description: "Unifies fragmented processes from Outlook, Word, Adobe, Docusign, Dropbox, and free up your lawyer to higher value tasks"
+      description: "Unifies fragmented processes from Outlook, Word, Adobe, Docusign, Dropbox, and frees up your lawyer to higher value tasks"
     }
   ];
 
@@ -123,11 +123,11 @@ export default function Landing() {
       period: "",
       description: "For legal teams & enterprises",
       features: [
-        "Enhanced AI services",
+        "AI co-pilot, drafting, redlining against your playbook/checklists"
         "Access to professional provisions library",
         "Advanced administrator capabilities and team collaboration",
         "API integrations into your tech stack (CRM, HRM, payments etc)",
-        "Priority support and white glove attorney access with our partner ecosystem"
+        "Priority support and last mile attorney access with our partner ecosystem"
       ],
       cta: "Coming Soon",
       popular: false,
@@ -340,8 +340,7 @@ export default function Landing() {
             </h1>
             
             <p className="text-xl md:text-2xl text-[#003366] mb-12 leading-relaxed font-light">
-              Drafts in Word. Emails flying back and forth. Redlines and edits piling up across versions. Signatures in DocuSign. 
-              Conversions to PDF. Stored in Dropbox or local folders. Has it been fully executed?!?!
+              Word drafts. Multiple emails. Redlines across version. PDF'ing. Docusign. Dropbox. XLS tracker.
             </p>
 
             <Button 
@@ -435,7 +434,7 @@ export default function Landing() {
                 Simple. Fast. Intelligent.
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                One platform. One workflow. Complete control. Useful for NDAs and any agreement, especially high frequency ones!
+                One platform. One workflow. Complete control. Useful for NDAs or any agreement, especially high frequency ones!
               </p>
             </div>
 
