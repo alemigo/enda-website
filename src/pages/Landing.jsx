@@ -340,7 +340,7 @@ export default function Landing() {
             </h1>
             
             <p className="text-xl md:text-2xl text-[#003366] mb-12 leading-relaxed font-light">
-              Word drafts. Multiple emails. Redlines across version. PDF'ing. Docusign. Dropbox. XLS tracker.
+              Word drafts. Multiple emails. Redlines across versions. PDF'ing. Docusign. Dropbox. Excel trackers.
             </p>
 
             <Button 
