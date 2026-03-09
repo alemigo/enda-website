@@ -123,7 +123,7 @@ export default function Landing() {
       period: "",
       description: "For legal teams & enterprises",
       features: [
-        "AI co-pilot, drafting, redlining against your playbook/checklists"
+        "AI co-pilot, drafting, redlining against your playbook/checklists",
         "Access to professional provisions library",
         "Advanced administrator capabilities and team collaboration",
         "API integrations into your tech stack (CRM, HRM, payments etc)",
