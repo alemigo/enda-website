@@ -1123,36 +1123,84 @@ export default function Landing() {
             );
             })}
           </div>
-          <div className="max-w-4xl mx-auto mt-10 text-sm text-slate-700 bg-white border border-slate-200 rounded-xl p-6">
-            <h3 className="text-base font-semibold text-slate-900 mb-2">
-              Included AI capabilities by plan
+          <div className="max-w-6xl mx-auto mt-14">
+            <h3 className="text-2xl md:text-3xl font-bold text-slate-900 text-center mb-6">
+              AI capabilities by plan
             </h3>
-            <div className="grid md:grid-cols-3 gap-4">
-              <div>
-                <p className="font-medium text-slate-900 mb-1">Free</p>
-                <ul className="list-disc list-inside space-y-1 text-xs md:text-sm">
-                  <li>AI-powered repository search.</li>
-                  <li>Key term and expiry extraction with reminders.</li>
-                  <li>Smart personal notifications and AI status summaries.</li>
-                </ul>
-              </div>
-              <div>
-                <p className="font-medium text-slate-900 mb-1">Business</p>
-                <ul className="list-disc list-inside space-y-1 text-xs md:text-sm">
-                  <li>Everything in Free.</li>
-                  <li>AI-assisted drafting and clause suggestions.</li>
-                  <li>Cross-document insights on obligations and risk.</li>
-                </ul>
-              </div>
-              <div>
-                <p className="font-medium text-slate-900 mb-1">Enterprise</p>
-                <ul className="list-disc list-inside space-y-1 text-xs md:text-sm">
-                  <li>Everything in Business.</li>
-                  <li>Playbook-driven redlining and prioritized issues.</li>
-                  <li>Compliance and breach monitoring with integrations.</li>
-                  <li>Advanced collaboration on AI suggestions.</li>
-                </ul>
-              </div>
+            <div className="grid md:grid-cols-3 gap-8">
+              <Card className="border-2 border-slate-200 shadow-sm h-full">
+                <CardHeader className="text-center pb-4">
+                  <CardTitle className="text-sm font-semibold text-slate-600 uppercase tracking-wide text-center">
+                    Free
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <ul className="space-y-3">
+                    <li className="flex items-start gap-3">
+                      <CheckCircle2 className="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" />
+                      <span className="text-slate-700">AI-powered repository search.</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle2 className="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" />
+                      <span className="text-slate-700">Key term and expiry extraction with reminders.</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle2 className="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" />
+                      <span className="text-slate-700">Smart personal notifications and AI status summaries.</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+              <Card className="border-2 border-slate-200 shadow-sm h-full">
+                <CardHeader className="text-center pb-4">
+                  <CardTitle className="text-sm font-semibold text-slate-600 uppercase tracking-wide text-center">
+                    Business
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <ul className="space-y-3">
+                    <li className="flex items-start gap-3">
+                      <CheckCircle2 className="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" />
+                      <span className="text-slate-700">Everything in Free.</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle2 className="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" />
+                      <span className="text-slate-700">AI-assisted drafting and clause suggestions.</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle2 className="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" />
+                      <span className="text-slate-700">Cross-document insights on obligations and risk.</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+              <Card className="border-2 border-slate-200 shadow-sm h-full">
+                <CardHeader className="text-center pb-4">
+                  <CardTitle className="text-sm font-semibold text-slate-600 uppercase tracking-wide text-center">
+                    Enterprise
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <ul className="space-y-3">
+                    <li className="flex items-start gap-3">
+                      <CheckCircle2 className="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" />
+                      <span className="text-slate-700">Everything in Business.</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle2 className="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" />
+                      <span className="text-slate-700">Playbook-driven redlining and prioritized issues.</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle2 className="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" />
+                      <span className="text-slate-700">Compliance and breach monitoring with integrations.</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle2 className="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" />
+                      <span className="text-slate-700">Advanced collaboration on AI suggestions.</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
             </div>
           </div>
           <div className="text-center mt-12">
