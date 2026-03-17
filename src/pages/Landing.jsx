@@ -1138,7 +1138,7 @@ export default function Landing() {
                   <ul className="space-y-3">
                     <li className="flex items-start gap-3">
                       <CheckCircle2 className="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" />
-                      <span className="text-slate-700">AI-powered repository search.</span>
+                      <span className="text-slate-700">AI-powered document import for automatic template creation</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle2 className="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" />
@@ -1147,6 +1147,10 @@ export default function Landing() {
                     <li className="flex items-start gap-3">
                       <CheckCircle2 className="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" />
                       <span className="text-slate-700">Smart personal notifications and AI status summaries.</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle2 className="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" />
+                      <span className="text-slate-700">AI-powered search and analysis.</span>
                     </li>
                   </ul>
                 </CardContent>
