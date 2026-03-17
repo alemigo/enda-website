@@ -52,33 +52,39 @@ export default function Landing() {
   const features = [
     {
       icon: Sparkles,
-      title: "Unified agreement work flow with AI-powered features",
-      description: "End-to-end platform speeds up contract creation, enhances negotiations with intuitive comparisons, legal insights, and smart analytics across your private repository"
+      title: "AI-native agreement workspace",
+      description:
+        "End-to-end, AI-native workspace that supports how you draft, negotiate, execute, and monitor NDAs and other agreements across your private repository — so you can focus on the highest-value points of the negotiation."
     },
     {
       icon: Shield,
-      title: "Proven Transaction-Based Professional NDAs and Agreements",
-      description: "Backed by over 20 years and $5b+ of real world transactions; leveraging databases with thousands of precedents"
+      title: "Proven, lawyer-approved content",
+      description:
+        "Backed by over 20 years and $5b+ of real world transactions, leveraging thousands of precedents to keep your playbooks and templates strong."
     },
     {
       icon: Zap,
-      title: "Lightning Fast and Standardized",
-      description: "Create, send, and execute agreements in minutes, not days"
+      title: "Playbook-driven redlines (Enterprise)",
+      description:
+        "When counterparties send drafts, eNDA runs any version against your playbook, prioritizes issues, and suggests redlines so you never miss a must-fix clause — without juggling separate Word files or compare windows."
     },
     {
       icon: Users,
-      title: "For Business Users and Lawyers",
-      description: "Intuitive, real-time collaborative platform, scaling effortlessly with your needs"
+      title: "Built for business and legal teams",
+      description:
+        "Business users toggle key provisions and sign quickly, while legal teams draft, add/delete provisions, and run playbooks across many use cases."
     },
     {
       icon: Lock,
-      title: "Tamper-Proof, Secure and Compliant",
-      description: "Content and signature verification with cryptographic encryption ensures document integrity"
+      title: "Tamper-proof, secure, and compliant",
+      description:
+        "Content and signature verification with cryptographic encryption, plus cross-document visibility into obligations, expiries, and counterparties."
     },
     {
       icon: TrendingUp,
-      title: "How It Should Be",
-      description: "Unifies fragmented processes from Outlook, Word, Adobe, Docusign, Dropbox, and frees up your lawyer to higher value tasks"
+      title: "From NDAs to the rest of your stack",
+      description:
+        "Unifies Outlook, Word, Adobe, Docusign, Dropbox and more, and grows with you from NDAs into service, employment, exclusivity, and other agreements."
     }
   ];
 
@@ -94,7 +100,9 @@ export default function Landing() {
         "Receive additional free usage for referrals",
         "Use our standardized or your own NDA",
         "Storage and document management / analytics",
-        "Unified automated work flows and notifications"
+        "Unified automated workflows and personal notifications",
+        "AI-powered search across your agreements",
+        "Key term and expiry extraction with basic reminders"
       ],
       cta: "Start Free (no credit card)",
       popular: false,
@@ -105,27 +113,29 @@ export default function Landing() {
       priceMonthly: "$25",
       priceAnnual: "$250",
       period: "/month",
-      description: "For growing businesses",
+      description: "For growing businesses and teams",
       features: [
         "20 documents per month",
-        "Access growing database of legal templates covering multiple high frequency use cases (employment agreements, exclusivity, distribution, marketing, etc)",
-        "Efficiently scale legal - create templates for your teams easily with AI, spend less time generating and processing docs",
-        "Smart analytics leverage your central repository; manage, search, extract insights"
+        "Access growing database of legal templates for high-frequency use cases",
+        "AI-assisted drafting and clause suggestions based on your agreements",
+        "Cross-document insights on obligations, parties, and expiries",
+        "Smart analytics to manage, search, and extract insights from your repository"
       ],
       cta: "Subscribe",
       popular: true,
-      color: "blue",
+      color: "blue"
     },
     {
-      name: "Professional",
+      name: "Enterprise",
       priceMonthly: "Contact sales for more",
       priceAnnual: "Contact sales for more",
       period: "",
       description: "For legal teams & enterprises",
       features: [
-        "AI co-pilot, drafting, redlining against your playbook/checklists",
-        "Access to professional provisions library",
-        "Advanced administrator capabilities and team collaboration",
+        "AI co-pilot for drafting and redlining against your playbooks/checklists",
+        "Playbook-driven issue prioritization on inbound drafts (must-fix vs nice-to-have)",
+        "Advanced collaboration: shared workspaces, approvals, and review flows",
+        "Compliance and breach monitoring when integrated with your systems",
         "API integrations into your tech stack (CRM, HRM, payments etc)",
         "Priority support and last mile attorney access with our partner ecosystem"
       ],
@@ -196,14 +206,16 @@ export default function Landing() {
                 Revolutionizing Legal Agreements
               </Badge>
               <h1 className="text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                Quick and easy non-disclosure agreements
+                AI-native workspace for NDAs and legal agreements
               </h1>
               <p className="text-xl text-blue-100 mb-8">
-                ... with or without a lawyer
+                Quick, standardized agreements — with or without a lawyer.
               </p>
               <p className="text-lg text-blue-50 mb-8 leading-relaxed">
-                Consolidate your NDA and legal workflow into one AI-powered platform. High value, low cost,
-                efficient document management that simplifies the entire legal process. Proven transaction based professional agreements leveraging two decades of institutional scale deals.
+                Consolidate your NDA and legal workflow into one AI-native platform. High value, low cost,
+                efficient document management that simplifies the entire legal process. Proven, transaction-based
+                professional agreements leveraging two decades of institutional scale deals — now supercharged with
+                AI playbooks, cross-document analysis, and ongoing monitoring.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
                 {/* email input removed */}
@@ -379,12 +391,15 @@ export default function Landing() {
               </p>
             </div>
 
-            {/* GIF/Video Placeholder - For Future Upload */}
+            {/* Old workflow graphic */}
             <Card className="p-8 md:p-12 bg-gradient-to-br from-red-50 to-orange-50 border-2 border-red-200 shadow-2xl">
-              <div className="relative bg-white rounded-lg shadow-lg overflow-hidden" style={{ minHeight: '400px' }}>
-              <img src="workflow.gif" alt="Workfow" className="w-full h-full object-cover" />
+              <div className="relative bg-white rounded-lg shadow-lg overflow-hidden">
+                <img
+                  src="workflow.gif"
+                  alt="Traditional NDA workflow spread across Outlook, Word, Adobe, Dropbox, and Docusign"
+                  className="w-full h-full object-cover"
+                />
               </div>
-              
               <div className="mt-8 flex flex-wrap gap-4 justify-center">
                 {['Multiple Tools', 'Version Confusion', 'Email Chains', 'Lost Documents', 'Time Consuming'].map((pain) => (
                   <div key={pain} className="px-4 py-2 bg-red-100 text-red-700 rounded-full text-sm font-medium">
@@ -410,8 +425,53 @@ export default function Landing() {
             There's a Better Way
           </h2>
           <p className="text-xl text-white/90 font-light">
-            Meet eNDA Technologies — the all-in-one platform for drafting, editing, 
-            agreeing, and managing NDAs in minutes (and any agreement) - the Evolution of Negotiated Digital Agreements
+            Meet eNDA Technologies — the all-in-one, AI-native platform for drafting, editing, 
+            agreeing, and managing NDAs (and other repeat agreements) in minutes.
+          </p>
+          <p className="text-lg text-white/80 mt-4 max-w-3xl mx-auto">
+            eNDA is the next generation of negotiated digital agreements: not just generating documents,
+            but helping you negotiate, execute, and monitor them over time.
+          </p>
+        </div>
+      </section>
+
+      {/* Demo Video Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="text-center mb-8">
+            <Badge className="bg-blue-100 text-blue-700 border-0 mb-4">
+              See eNDA in action
+            </Badge>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-3">
+              From jumbled tools to one intuitive workspace
+            </h2>
+            <p className="text-slate-600 max-w-2xl mx-auto">
+              This short walkthrough shows how eNDA replaces the complex mix of Outlook, Word, Adobe, Docusign, and
+              Dropbox with a single, AI-native agreement flow.
+            </p>
+          </div>
+          <div className="relative bg-slate-900 rounded-xl shadow-2xl overflow-hidden" style={{ paddingTop: '56.25%' }}>
+            <iframe
+              className="absolute inset-0 w-full h-full"
+              src="https://www.youtube.com/embed/B6_43YdGe-g"
+              title="eNDA demo video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            />
+          </div>
+          <p className="mt-3 text-center text-xs text-slate-500">
+            Prefer YouTube?{" "}
+            <a
+              href="https://www.youtube.com/watch?v=B6_43YdGe-g"
+              target="_blank"
+              rel="noreferrer"
+              className="underline underline-offset-2 hover:text-slate-800"
+            >
+              Open the video in a new tab
+            </a>
+            .
           </p>
         </div>
       </section>
@@ -434,7 +494,8 @@ export default function Landing() {
                 Simple. Fast. Intelligent.
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                One platform. One workflow. Complete control. Useful for NDAs or any agreement, especially high frequency ones!
+                One platform. One workflow. Complete control. Useful for NDAs or any agreement, especially
+                high-frequency ones — for both business users and legal teams.
               </p>
             </div>
 
@@ -482,7 +543,13 @@ export default function Landing() {
               </div>
               
               <div className="mt-8 flex flex-wrap gap-4 justify-center">
-                {['AI-Features', 'Single Platform for All Steps', 'Automated Notifications', 'Faster Execution', 'Smart Management'].map((benefit) => (
+                {[
+                  'AI-native from draft to monitoring',
+                  'Single platform for all steps',
+                  'Automated notifications & reminders',
+                  'Faster execution for business users',
+                  'Playbooks and libraries for legal'
+                ].map((benefit) => (
                   <div key={benefit} className="px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-medium">
                     <CheckCircle className="w-4 h-4 inline mr-2" />
                     {benefit}
@@ -490,6 +557,246 @@ export default function Landing() {
                 ))}
               </div>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* AI-native Copilot Section */}
+      <section id="ai-copilot" className="py-20 md:py-28 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 text-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-14">
+            <Badge className="bg-emerald-500/10 text-emerald-300 border border-emerald-500/40 mb-4">
+              AI-native legal copilot
+            </Badge>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+              Let AI do the heavy lifting
+            </h2>
+            <p className="text-lg md:text-xl text-slate-200 max-w-3xl mx-auto">
+              When drafts arrive, eNDA runs your playbooks, analyzes your agreements across matters, and keeps everyone
+              aligned with smart notifications and collaboration — tuned for both business and legal teams.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-12 items-stretch">
+            <Card className="bg-slate-900/70 border border-emerald-500/40 shadow-xl flex flex-col">
+              <CardHeader>
+                <div className="flex items-start justify-between gap-3">
+                  <div className="flex items-center gap-3">
+                    <div className="w-9 h-9 rounded-xl bg-emerald-500/20 flex items-center justify-center">
+                      <FileText className="w-5 h-5 text-emerald-300" />
+                    </div>
+                    <CardTitle className="text-base md:text-lg text-slate-50">
+                      Playbook-driven redlining
+                    </CardTitle>
+                  </div>
+                  <Badge className="bg-purple-500/20 text-purple-100 border border-purple-500/40 text-[10px]">
+                    Enterprise
+                  </Badge>
+                </div>
+              </CardHeader>
+              <CardContent className="flex-1 space-y-3 text-slate-100 text-sm md:text-sm">
+                <p>
+                  When a counterparty sends a draft, eNDA compares any version you choose to your legal playbook and
+                  preferred positions, all inside a single, intuitive workspace.
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="mt-0.5 w-4 h-4 text-emerald-400" />
+                    <span>Classifies issues by priority (must-fix vs nice-to-have).</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="mt-0.5 w-4 h-4 text-emerald-400" />
+                    <span>Quickly compare against prior or alternate drafts without juggling files.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="mt-0.5 w-4 h-4 text-emerald-400" />
+                    <span>Suggested redlines and talking points you can accept, edit, or reject.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="mt-0.5 w-4 h-4 text-emerald-400" />
+                    <span>Concise summaries for business stakeholders.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="mt-0.5 w-4 h-4 text-emerald-400" />
+                    <span>Works across NDAs and other agreements like employment or exclusivity.</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-slate-900/70 border border-sky-500/40 shadow-xl flex flex-col">
+              <CardHeader>
+                <div className="flex items-start justify-between gap-3">
+                  <div className="flex items-center gap-3">
+                    <div className="w-9 h-9 rounded-xl bg-sky-500/20 flex items-center justify-center">
+                      <TrendingUp className="w-5 h-5 text-sky-200" />
+                    </div>
+                    <CardTitle className="text-base md:text-lg text-slate-50">
+                      Cross-document intelligence
+                    </CardTitle>
+                  </div>
+                  <div className="flex flex-col items-end gap-1">
+                    <div className="flex flex-wrap gap-1">
+                      <Badge className="bg-emerald-500/20 text-emerald-100 border border-emerald-500/40 text-[10px] px-2 py-0.5">
+                        Free
+                      </Badge>
+                      <Badge className="bg-blue-500/20 text-blue-100 border border-blue-500/40 text-[10px] px-2 py-0.5">
+                        Business
+                      </Badge>
+                      <Badge className="bg-purple-500/20 text-purple-100 border border-purple-500/40 text-[10px] px-2 py-0.5">
+                        Enterprise
+                      </Badge>
+                    </div>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent className="flex-1 space-y-3 text-slate-100 text-sm md:text-sm">
+                <p>
+                  Understand what you have agreed to, across matters, in seconds instead of days of manual review.
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="mt-0.5 w-4 h-4 text-sky-300" />
+                    <span>AI search across your repository with term, party, and clause extraction.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="mt-0.5 w-4 h-4 text-sky-300" />
+                    <span>Key obligation and expiry data with reminders so you never miss renewals.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="mt-0.5 w-4 h-4 text-sky-300" />
+                    <span>
+                      Enterprise: compliance and breach monitoring when integrated with your CRM, HR, finance, or ticketing
+                      systems.
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="mt-0.5 w-4 h-4 text-sky-300" />
+                    <span>Spot anomalies like unapproved term deviations or obligations at risk.</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-slate-900/70 border border-amber-500/40 shadow-xl flex flex-col">
+              <CardHeader>
+                <div className="flex items-start justify-between gap-3">
+                  <div className="flex items-center gap-3">
+                    <div className="w-9 h-9 rounded-xl bg-amber-500/20 flex items-center justify-center">
+                      <Users className="w-5 h-5 text-amber-200" />
+                    </div>
+                    <CardTitle className="text-base md:text-lg text-slate-50">
+                      Notifications &amp; collaboration
+                    </CardTitle>
+                  </div>
+                  <div className="flex flex-col items-end gap-1">
+                    <Badge className="bg-emerald-500/20 text-emerald-100 border border-emerald-500/40 text-[10px] px-2 py-0.5">
+                      Free
+                    </Badge>
+                    <Badge className="bg-purple-500/20 text-purple-100 border border-purple-500/40 text-[10px] px-2 py-0.5">
+                      Enterprise
+                    </Badge>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent className="flex-1 space-y-3 text-slate-100 text-sm md:text-sm">
+                <p>
+                  Keep everyone aligned with the right level of detail, from solo founders to global legal teams.
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="mt-0.5 w-4 h-4 text-amber-300" />
+                    <span>Free: smart notifications when drafts arrive, signatures complete, and key dates approach.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="mt-0.5 w-4 h-4 text-amber-300" />
+                    <span>Free: AI-generated status summaries so business users know what is blocking and what is signed.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="mt-0.5 w-4 h-4 text-amber-300" />
+                    <span>Enterprise: shared workspaces, approvals, and inline comments on AI suggestions.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="mt-0.5 w-4 h-4 text-amber-300" />
+                    <span>Enterprise: optional Slack/Teams or email digests for legal and business stakeholders.</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 items-stretch">
+            <Card className="bg-slate-900/70 border border-slate-700">
+              <CardHeader>
+                <div className="flex items-center justify-between gap-3">
+                  <div className="flex items-center gap-3">
+                    <div className="w-9 h-9 rounded-xl bg-emerald-500/20 flex items-center justify-center">
+                      <User className="w-5 h-5 text-emerald-200" />
+                    </div>
+                    <CardTitle className="text-base md:text-lg text-slate-50">
+                      For business leaders
+                    </CardTitle>
+                  </div>
+                  <div className="flex flex-wrap gap-1">
+                    <Badge className="bg-emerald-500/20 text-emerald-100 border border-emerald-500/40 text-[10px] px-2 py-0.5">
+                      Free
+                    </Badge>
+                    <Badge className="bg-blue-500/20 text-blue-100 border border-blue-500/40 text-[10px] px-2 py-0.5">
+                      Business
+                    </Badge>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent className="text-slate-100 text-sm md:text-base space-y-2">
+                <p>
+                  Move fast without getting lost in redlines. eNDA gives you a simple view of risk and status while your
+                  legal team stays in control.
+                </p>
+                <ul className="list-disc list-inside space-y-1">
+                  <li>Toggle key protections (like non-solicit or non-circumvention) on or off.</li>
+                  <li>See which agreements are pending, signed, or expiring soon.</li>
+                  <li>Rely on AI summaries and dashboards instead of digging through email chains.</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-slate-900/70 border border-slate-700">
+              <CardHeader>
+                <div className="flex items-center justify-between gap-3">
+                  <div className="flex items-center gap-3">
+                    <div className="w-9 h-9 rounded-xl bg-purple-500/20 flex items-center justify-center">
+                      <Shield className="w-5 h-5 text-purple-100" />
+                    </div>
+                    <CardTitle className="text-base md:text-lg text-slate-50">
+                      For legal &amp; legal ops
+                    </CardTitle>
+                  </div>
+                  <Badge className="bg-purple-500/20 text-purple-100 border border-purple-500/40 text-[10px] px-2 py-0.5">
+                    Enterprise
+                  </Badge>
+                </div>
+              </CardHeader>
+              <CardContent className="text-slate-100 text-sm md:text-base space-y-2">
+                <p>
+                  Stay in the driver&apos;s seat with tools designed for professional practice, not generic text
+                  generation.
+                </p>
+                <ul className="list-disc list-inside space-y-1">
+                  <li>Draft, add, and delete provisions with clause libraries anchored in real transactions.</li>
+                  <li>Run playbooks consistently across NDAs, employment, services, and other templates.</li>
+                  <li>Use cross-document Q&amp;A to answer questions like &quot;Where do we have uncapped liability?&quot;</li>
+                  <li>Scale support for the business without scaling manual review work.</li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="mt-10 text-xs md:text-sm text-slate-400 max-w-3xl">
+            <p>
+              What else can our AI help with? Clause and template generation from your past deals, market-standard
+              benchmarking for proposed language, per-agreement risk scoring, and scenario Q&amp;A across your agreement
+              portfolio — all built on your private, secure data.
+            </p>
           </div>
         </div>
       </section>
@@ -518,17 +825,20 @@ export default function Landing() {
                 {
                   icon: FileText,
                   title: "Draft with Intelligence",
-                  description: "Choose a trusted, lawyer-approved template or upload your own with AI assistance to extract from real agreements; easily customize and process using our technology."
+                  description:
+                    "Choose a trusted, lawyer-approved template or upload your own. Our AI is trained on thousands of real agreements to help extract, normalize, and suggest clauses you can trust."
                 },
                 {
                   icon: Zap,
                   title: "Toggle & Optimize",
-                  description: "Simply toggle on/off provisions such as non-solicit or non-circumvention from our master library or your own dedicated set; use AI to analyze drafts / exchanges as you wish."
+                  description:
+                    "Toggle protections like non-solicit or non-circumvention from master libraries or your own set. AI flags inconsistencies, highlights risk, and suggests preferred language when terms change."
                 },
                 {
                   icon: Users,
                   title: "Agree & Sign",
-                  description: "Invite your counterparty, agree, and sign — all in one place. No more email chains or version confusion."
+                  description:
+                    "Invite counterparties, negotiate, and sign in one place with a clear history of versions, comments, and approvals — no more scattered email threads or lost PDFs."
                 }
               ].map((feature, index) => (
                 <Card 
@@ -812,6 +1122,38 @@ export default function Landing() {
               </Card>
             );
             })}
+          </div>
+          <div className="max-w-4xl mx-auto mt-10 text-sm text-slate-700 bg-white border border-slate-200 rounded-xl p-6">
+            <h3 className="text-base font-semibold text-slate-900 mb-2">
+              Included AI capabilities by plan
+            </h3>
+            <div className="grid md:grid-cols-3 gap-4">
+              <div>
+                <p className="font-medium text-slate-900 mb-1">Free</p>
+                <ul className="list-disc list-inside space-y-1 text-xs md:text-sm">
+                  <li>AI-powered repository search.</li>
+                  <li>Key term and expiry extraction with reminders.</li>
+                  <li>Smart personal notifications and AI status summaries.</li>
+                </ul>
+              </div>
+              <div>
+                <p className="font-medium text-slate-900 mb-1">Business</p>
+                <ul className="list-disc list-inside space-y-1 text-xs md:text-sm">
+                  <li>Everything in Free.</li>
+                  <li>AI-assisted drafting and clause suggestions.</li>
+                  <li>Cross-document insights on obligations and risk.</li>
+                </ul>
+              </div>
+              <div>
+                <p className="font-medium text-slate-900 mb-1">Enterprise</p>
+                <ul className="list-disc list-inside space-y-1 text-xs md:text-sm">
+                  <li>Everything in Business.</li>
+                  <li>Playbook-driven redlining and prioritized issues.</li>
+                  <li>Compliance and breach monitoring with integrations.</li>
+                  <li>Advanced collaboration on AI suggestions.</li>
+                </ul>
+              </div>
+            </div>
           </div>
           <div className="text-center mt-12">
             <p className="text-slate-600 mb-4">
