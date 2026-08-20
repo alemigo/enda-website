@@ -21,11 +21,18 @@ import {
   Copy
 } from "lucide-react";
 import '../App.css';
+import AuthHeaderButton from "@/components/layout/AuthHeaderButton";
+import { APP_DASHBOARD_URL, APP_GETSTARTED_URL, useCurrentUser } from "@/hooks/useCurrentUser";
 
 export default function Landing() {
   const navigate = useNavigate();
   const [billingPeriod, setBillingPeriod] = useState('monthly');
   const supportEmail = "support@endatech.app";
+  const { user, status, isLoggedIn } = useCurrentUser();
+
+  const goToApp = (getStartedUrl = APP_GETSTARTED_URL) => {
+    window.location.href = isLoggedIn ? APP_DASHBOARD_URL : getStartedUrl;
+  };
 
   const [isVisible, setIsVisible] = useState({});
   const observerRef = useRef(null);
@@ -184,13 +191,7 @@ export default function Landing() {
               </a>
             </nav>
             <div className="flex items-center gap-3 rounded">
-                  <Button
-                    variant="ghost"
-                    onClick={() => (window.location.href = "https://docs.endatech.app/dashboard")}
-                    className="text-slate-700 hover:text-slate-900 font-medium transition-colors"
-                  >
-                    Dashboard
-                  </Button>
+                  <AuthHeaderButton user={user} status={status} />
             </div>
           </div>
         </div>
@@ -221,7 +222,7 @@ export default function Landing() {
                 {/* email input removed */}
                 <Button
                   className="bg-[#FF6B35] hover:bg-[#FF5722] text-white h-12 px-8 rounded-full font-semibold"
-                  onClick={() => (window.location.href = "https://docs.endatech.app/getstarted")}
+                  onClick={() => goToApp()}
                 >
                   Get started for free
                   <ArrowRight className="w-4 h-4 ml-2" />
@@ -1231,7 +1232,7 @@ export default function Landing() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               className="bg-[#FF6B35] hover:bg-[#FF5722] text-white h-14 px-8 text-lg rounded-full font-semibold"
-              onClick={() => (window.location.href = "https://docs.endatech.app/getstarted")}
+              onClick={() => goToApp()}
             >
               Start free 
               <ArrowRight className="w-5 h-5 ml-2" />
